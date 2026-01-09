@@ -314,7 +314,8 @@ vcs: vcs_build
 # Build the TB and module using QuestaSim
 build: $(library) $(library)/.build-srcs $(library)/.build-tb
 	# Optimize top level
-	$(VOPT) $(compile_flag) -work $(library)  $(top_level) -o $(top_level)_optimized +acc -check_synthesis
+	echo "[QuestaSim] Optimizing top level $(top_level)"
+# 	$(VOPT) $(compile_flag) -work $(library)  $(top_level) -o $(top_level)_optimized +acc -check_synthesis
 
 uart_src_vhdl := $(wildcard corev_apu/fpga/src/apb_uart/src/*.vhd)
 uart_src_vhdl := $(addprefix $(root-dir), $(uart_src_vhdl))
@@ -345,7 +346,7 @@ sim: build
 	echo $(riscv-benchmarks)
 	vsim${questa_version} +permissive $(questa-flags) $(questa-cmd) -lib $(library) +MAX_CYCLES=$(max_cycles) +UVM_TESTNAME=$(test_case) \
 	 $(uvm-flags) $(QUESTASIM_FLAGS)  \
-	${top_level}_optimized +permissive-off +binary_mem=$(APP_PATH)/$(APP).mem | tee sim.log
+	${top_level} +permissive-off +binary_mem=$(APP_PATH)/$(APP).mem | tee sim.log
 
 
 run-benchmarks: $(riscv-benchmarks)

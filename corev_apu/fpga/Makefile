@@ -80,7 +80,7 @@ xilinx_lib:
 
 
 program_cva6_fpga:
-	xsct scripts/program_cva6_fpga.tcl	
+	xsdb scripts/program_cva6_fpga.tcl	
 
 get_hs2_sn:
 	$(VIVADO) -mode batch -source scripts/get_hs2_sn.tcl

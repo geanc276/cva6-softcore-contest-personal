@@ -22,6 +22,7 @@ package cvxif_instr_pkg;
     MSUB_RS3_R4 = 4'b0111,
     NMADD_RS3_R4 = 4'b1000,
     NMSUB_RS3_R4 = 4'b1001,
+    CPLX_MUL = 4'b1010, // <--- AJOUT ICI (Opcode 10)
     ADD_RS3_R = 4'b1111
   } opcode_t;
 
@@ -52,7 +53,8 @@ package cvxif_instr_pkg;
   } copro_compressed_resp_t;
 
   // 4 Possible RISCV instructions for Coprocessor
-  parameter int unsigned NbInstr = 10;
+  // parameter int unsigned NbInstr = 10;
+  parameter int unsigned NbInstr = 11; // <---- passage à 11 instructions
   parameter copro_issue_resp_t CoproInstr[NbInstr] = '{
       '{
           // Custom Nop
@@ -133,7 +135,16 @@ package cvxif_instr_pkg;
           mask: 32'b00000_11_00000_00000_1_11_00000_1111111,
           resp : '{accept : 1'b1, writeback : 1'b1, register_read : {1'b1, 1'b1, 1'b1}},
           opcode : NMADD_RS3_R4
-      }
+      },
+      '{
+          // Custom Complex Mul: cplx_mul rd, rs1, rs2
+          // Encoding: funct3=010 (2), opcode=custom3 (0x7B)
+          instr:
+          32'b0000000_00000_00000_010_00000_1111011,
+          mask:       32'b1111111_00000_00000_111_00000_1111111,
+          resp : '{accept : 1'b1, writeback : 1'b1, register_read : {1'b0, 1'b1, 1'b1}}, // Lit RS1, RS2, Ecrit RD
+          opcode : CPLX_MUL
+      } 
   };
 
   parameter int unsigned NbCompInstr = 2;

@@ -6,6 +6,8 @@
 // You may obtain a copy of the License at https://solderpad.org/licenses/
 //
 // Original Author: Guillaume Chauvon
+`include "cvxif_types.svh"
+`include "rvfi_types.svh"
 
 module cvxif_example_coprocessor
   import cvxif_instr_pkg::*;
@@ -26,6 +28,7 @@ module cvxif_example_coprocessor
     parameter  type         x_result_t          = logic,
     parameter  type         cvxif_req_t         = logic,
     parameter  type         cvxif_resp_t        = logic,
+
     localparam type         registers_t         = logic [NrRgprPorts-1:0][XLEN-1:0]
 ) (
     input  logic        clk_i,        // Clock
