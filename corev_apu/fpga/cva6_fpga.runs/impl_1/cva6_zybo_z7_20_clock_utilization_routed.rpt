@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Fri Jan  9 11:09:45 2026
+| Date         : Mon Jan 12 15:13:07 2026
 | Host         : emmk-prj1 running 64-bit Ubuntu 24.04.3 LTS
 | Command      : report_clock_utilization -file cva6_zybo_z7_20_clock_utilization_routed.rpt
 | Design       : cva6_zybo_z7_20
