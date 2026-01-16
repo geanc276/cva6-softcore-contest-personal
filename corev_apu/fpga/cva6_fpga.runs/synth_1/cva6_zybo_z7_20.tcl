@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.runs/synth_1/cva6_zybo_z7_20.tcl"
+  variable script "/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/cva6_fpga.runs/synth_1/cva6_zybo_z7_20.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,7 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-97533-emmk-prj1/incrSyn
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-6971-emmk-prj1/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-4480} -limit 1000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -69,33 +69,33 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.cache/wt [current_project]
-set_property parent.project_path /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.xpr [current_project]
+set_property webtalk.parent_dir /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/cva6_fpga.cache/wt [current_project]
+set_property parent.project_path /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/cva6_fpga.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.2 [current_project]
-set_property ip_output_repo /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.cache/ip [current_project]
+set_property ip_output_repo /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/cva6_fpga.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs {
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/axi_sd_bridge/include
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/include
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/include
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/include
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/register_interface/include
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/core/include
+  /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/axi_sd_bridge/include
+  /home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/include
+  /home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/include
+  /home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/include
+  /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/register_interface/include
+  /home/riscv-contest/Documents/cva6-softcore-contest/core/include
 } [current_fileset]
 set_property verilog_define BRAM=BRAM [current_fileset]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog {
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/zybo-z7-20.svh
-  /home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/include/common_cells/registers.svh
+  /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20.svh
+  /home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh
 }
-set_property file_type "Verilog Header" [get_files /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/zybo-z7-20.svh]
-set_property is_global_include true [get_files /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/zybo-z7-20.svh]
-set_property file_type "Verilog Header" [get_files /home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
-set_property is_global_include true [get_files /home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
+set_property file_type "Verilog Header" [get_files /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20.svh]
+set_property is_global_include true [get_files /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/zybo-z7-20.svh]
+set_property file_type "Verilog Header" [get_files /home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
+set_property is_global_include true [get_files /home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/include/common_cells/registers.svh]
 read_verilog -library xil_defaultlib -sv {
   /home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/AsyncDpRam.sv
   /home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/AsyncThreePortRam.sv
@@ -363,23 +363,23 @@ read_vhdl -library xil_defaultlib {
   /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd
   /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_transmitter.vhd
 }
-read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci
-set_property used_in_synthesis false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_ooc.xdc]
+read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.xci
+set_property used_in_synthesis false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_ooc.xdc]
 
-read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci
-set_property used_in_synthesis false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_ooc.xdc]
+read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.srcs/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.xci
+set_property used_in_synthesis false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_ooc.xdc]
 
-read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_blk_mem_gen/xlnx_blk_mem_gen.srcs/sources_1/ip/xlnx_blk_mem_gen/xlnx_blk_mem_gen.xci
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_blk_mem_gen/xlnx_blk_mem_gen.gen/sources_1/ip/xlnx_blk_mem_gen/xlnx_blk_mem_gen_ooc.xdc]
+read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_blk_mem_gen/xlnx_blk_mem_gen.srcs/sources_1/ip/xlnx_blk_mem_gen/xlnx_blk_mem_gen.xci
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_blk_mem_gen/xlnx_blk_mem_gen.gen/sources_1/ip/xlnx_blk_mem_gen/xlnx_blk_mem_gen_ooc.xdc]
 
-read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc]
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc]
-set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_ooc.xdc]
+read_ip -quiet /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.srcs/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xci
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc]
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc]
+set_property used_in_implementation false [get_files -all /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -390,11 +390,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/zybo_z7_20.xdc
-set_property used_in_implementation false [get_files /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/zybo_z7_20.xdc]
+read_xdc /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/constraints/zybo_z7_20.xdc
+set_property used_in_implementation false [get_files /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/constraints/zybo_z7_20.xdc]
 
-read_xdc /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc
-set_property used_in_implementation false [get_files /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc]
+read_xdc /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/constraints/cva6_fpga.xdc
+set_property used_in_implementation false [get_files /home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/constraints/cva6_fpga.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
