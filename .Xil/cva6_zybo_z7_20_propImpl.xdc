@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc rfile:../corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc id:1 order:EARLY scoped_inst:i_xlnx_clk_gen/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc rfile:../corev_apu/fpga/constraints/cva6_fpga.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc rfile:../corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc id:1 order:EARLY scoped_inst:i_xlnx_clk_gen/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/constraints/cva6_fpga.xdc rfile:../corev_apu/fpga/constraints/cva6_fpga.xdc id:2} [current_design]
 current_instance i_xlnx_clk_gen/inst
 set_property src_info {type:SCOPED_XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter [get_clocks -of_objects [get_ports clk_in1]] 0.050

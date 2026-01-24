@@ -8,6 +8,7 @@
 // Original Author: Guillaume Chauvon (guillaume.chauvon@thalesgroup.com)
 
 
+
 package cvxif_instr_pkg;
 
   typedef enum logic [3:0] {
@@ -21,10 +22,7 @@ package cvxif_instr_pkg;
     MSUB_RS3_R4 = 4'b0111,
     NMADD_RS3_R4 = 4'b1000,
     NMSUB_RS3_R4 = 4'b1001,
-    ///////////////////////////
-    // Ajout opcode CPLX_MUL
-    CPLX_MUL = 4'b1010,
-    ///////////////////////////
+    CPLX_MUL = 4'b1010, // <--- AJOUT ICI (Opcode 10)
     ADD_RS3_R = 4'b1111
   } opcode_t;
 
@@ -55,12 +53,8 @@ package cvxif_instr_pkg;
   } copro_compressed_resp_t;
 
   // 4 Possible RISCV instructions for Coprocessor
-  ///////////////////////////
-  // Passage à 11 instructions
   // parameter int unsigned NbInstr = 10;
-  parameter int unsigned NbInstr = 11;instructions
-  ///////////////////////////
-
+  parameter int unsigned NbInstr = 11; // <---- passage à 11 instructions
   parameter copro_issue_resp_t CoproInstr[NbInstr] = '{
       '{
           // Custom Nop
@@ -143,7 +137,6 @@ package cvxif_instr_pkg;
           opcode : NMADD_RS3_R4
       },
       '{
-          ///////////////////////////
           // Custom Complex Mul: cplx_mul rd, rs1, rs2
           // Encoding: funct3=010 (2), opcode=custom3 (0x7B)
           instr:
@@ -151,35 +144,6 @@ package cvxif_instr_pkg;
           mask:       32'b1111111_00000_00000_111_00000_1111111,
           resp : '{accept : 1'b1, writeback : 1'b1, register_read : {1'b0, 1'b1, 1'b1}}, // Lit RS1, RS2, Ecrit RD
           opcode : CPLX_MUL
-
-          // Structure d'une instruction R-type :
-          //  31 - 25 : funct7
-          //  24 - 20 : rs2
-          //  10 - 15 : rs1 
-          //  14 - 12 : funct3
-          //  11 - 7 : rd
-          //  6 - 0 : opcode
-
-          // Structure de notre instruction R-type CPLX_MUL :
-          // instr: 32'b0000000_00000_00000_010_00000_1111011
-          
-          //  funct7 :
-          //  rs2 : deuxième registre source (B)
-          //  rs1 : premier registre source (A)
-          //  funct3 : 0x2 = 010 : différencie CPLX_MUL d'autres instructions futures comme CPLX_ADD, CPLX_SUB qu'on pourra faire après
-          //  rd : registre de destination
-          //  Opcode : Ox7B = 1111011 : opcode custom3 reservé par RISC-V pour les extensions propriétaires
-
-          // mask: 32'b1111111_00000_00000_111_00000_1111111
-          //  on regarde avec le masque seulement les choses qu'on à modifié
-          
-          // register_read : {1'b0, 1'b1, 1'b1}
-          //  On demande à lire rs2 et rs1
-
-          // writeback : 1'b1 
-          //On signale qu'on va écrire un résultat
-
-          ///////////////////////////
       } 
   };
 

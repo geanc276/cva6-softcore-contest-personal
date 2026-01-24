@@ -32,8 +32,9 @@ module copro_alu
     output logic                  we_o
 );
 //////////////////
-  // Variables intermédiaires pour la multiplication complexe, en signé pour pouvoir gérer les nb négatifs
-  logic signed [15:0] ar, ai, br, bi; //parties réelles et imaginaires de A et B
+  // Variables intermédiaires pour la multiplication complexe
+  // Déclarées en dehors du case pour éviter les soucis de scope SystemVerilog
+  logic signed [15:0] ar, ai, br, bi;
   logic signed [31:0] p_rr, p_ii, p_ri, p_ir;
   logic signed [31:0] sum_r, sum_i;
 //////////////////
@@ -53,12 +54,12 @@ module copro_alu
   assign we_o     = we_q;
 
   always_comb begin
-    //////////////////
+    ///////
     // Valeurs par défaut
     ar = '0; ai = '0; br = '0; bi = '0;
     p_rr = '0; p_ii = '0; p_ri = '0; p_ir = '0;
     sum_r = '0; sum_i = '0;
-    //////////////////  
+    ///////  
   
     case (opcode_i)
       cvxif_instr_pkg::NOP: begin
@@ -77,7 +78,7 @@ module copro_alu
         rd_n     = rd_i;
         we_n     = 1'b1;
       end
-      cvxif_instr_pkg:OUBLE_RS1: begin
+      cvxif_instr_pkg::DOUBLE_RS1: begin
         result_n = registers_i[0] + registers_i[0];
         hartid_n = hartid_i;
         id_n     = id_i;
@@ -85,7 +86,7 @@ module copro_alu
         rd_n     = rd_i;
         we_n     = 1'b1;
       end
-      cvxif_instr_pkg:OUBLE_RS2: begin
+      cvxif_instr_pkg::DOUBLE_RS2: begin
         result_n = registers_i[1] + registers_i[1];
         hartid_n = hartid_i;
         id_n     = id_i;
@@ -142,16 +143,16 @@ module copro_alu
         we_n = 1'b1;
       end
       
-      //////////////////
+      ////////
       cvxif_instr_pkg::CPLX_MUL: begin
         // Découpage : RS1 = {ImagA, RealA}, RS2 = {ImagB, RealB}
-        // bits 15:0 = Real, 31:16 = Imag
+        // Convention Little Endian : bits 15:0 = Real, 31:16 = Imag
         ar = registers_i[0][15:0];
         ai = registers_i[0][31:16];
         br = registers_i[1][15:0];
         bi = registers_i[1][31:16];
 
-        // 4 Multiplications (DSP du FPGA)
+        // 4 Multiplications (Les DSP du FPGA feront ça très bien)
         p_rr = ar * br;
         p_ii = ai * bi;
         p_ri = ar * bi;
@@ -162,13 +163,6 @@ module copro_alu
         // Imag = Ar*Bi + Ai*Br
         // sround(x) ajoute 1<<(FRACBITS-1) puis shift >> FRACBITS. Ici FRACBITS=15.
         // Donc on ajoute 16384 (0x4000) et on shift de 15.
-
-        // Explication :
-        //ar, ai, ... sont en format Q15 : 1 bit signe et 15 bits pour le nb
-        // quand on calcule p_rr, on est en Q30
-        // Donc on revient en Q15 (décalage à droite de 15)
-        // Mais si on décale juste, on coupe la virgule
-        // donc avant de décaler on ajoute 0.5 = 2^14 = 16384
         
         sum_r = p_rr - p_ii + 32'd16384;
         sum_i = p_ri + p_ir + 32'd16384;
@@ -184,7 +178,7 @@ module copro_alu
         rd_n     = rd_i;
         we_n     = 1'b1;
       end
-      //////////////////
+      ////////
       
       default: begin
         result_n = '0;
