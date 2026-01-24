@@ -1,0 +1,1022 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 624672
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Jan 24 15:09:50 CET 2026
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 6.14.0-37-generic
+OS Architecture: amd64
+Available processors (cores): 16
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 66, y = 32, width = 1854, height = 1048
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	riscv-contest
+User home directory: /home/riscv-contest
+User working directory: /home/riscv-contest/Documents/cva6-softcore-contest-personal
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.1/data:/tools/Xilinx/Vivado/2024.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.1/bin
+
+Vivado preferences file: /home/riscv-contest/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/riscv-contest/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/riscv-contest/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/riscv-contest/Documents/cva6-softcore-contest-personal/vivado.log
+Vivado journal file: 	/home/riscv-contest/Documents/cva6-softcore-contest-personal/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-624672-emmk-prj1
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.1/data:/tools/Xilinx/Vivado/2024.1/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.1/bin:/tools/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/riscv-contest/Documents/cva6-softcore-contest-personal:emmk-prj1_1769263780_624604
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.1/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.1
+XILINX_SDK: /tools/Xilinx/Vitis/2024.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,617 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // t (PAResourceEtoH.GettingStartedView_OPEN_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,643 MB. GUI used memory: 72 MB. Current time: 1/24/26, 3:09:51 PM CET
+// Elapsed time: 10 seconds
+setFileChooser("/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.xpr");
+// [GUI Memory]: 83 MB (+84114kb) [00:00:17]
+// [Engine Memory]: 1,644 MB (+1571965kb) [00:00:17]
+// Opening Vivado Project: /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.xpr. Version: Vivado v2024.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 128 MB (+43457kb) [00:00:18]
+// [Engine Memory]: 1,776 MB (+52287kb) [00:00:18]
+// [GUI Memory]: 151 MB (+17368kb) [00:00:18]
+// [GUI Memory]: 166 MB (+7778kb) [00:00:19]
+// [Engine Memory]: 1,885 MB (+21573kb) [00:00:19]
+// WARNING: HEventQueue.dispatchEvent() is taking  1190 ms.
+// Tcl Message: open_project /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'. 
+// Project name: cva6_fpga; location: /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bj (Open Project Progress)
+// [GUI Memory]: 175 MB (+178kb) [00:00:22]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 19); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 19); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 28, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,993 MB (+14777kb) [00:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,055 MB. GUI used memory: 90 MB. Current time: 1/24/26, 3:10:11 PM CET
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,075 MB. GUI used memory: 90 MB. Current time: 1/24/26, 3:10:19 PM CET
+// [Engine Memory]: 3,075 MB (+1029463kb) [00:00:35]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/riscv-contest/Documents/cva6-softcore-contest-personal/./.Xil/Vivado-624672-emmk-prj1/xc7z020_detail.xgd_4E24B0E3 elapsed time: 0.6s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// [Engine Memory]: 3,264 MB (+37080kb) [00:00:37]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1063 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.22 . Memory (MB): peak = 8360.688 ; gain = 0.000 ; free physical = 42795 ; free virtual = 59393 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1673 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 8466.988 ; gain = 7.250 ; free physical = 42462 ; free virtual = 59060 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 9052.859 ; gain = 0.000 ; free physical = 41168 ; free virtual = 57766 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9052.859 ; gain = 0.000 ; free physical = 41160 ; free virtual = 57758 Read PlaceDB: Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.55 . Memory (MB): peak = 9085.820 ; gain = 32.961 ; free physical = 41042 ; free virtual = 57641 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9085.820 ; gain = 0.000 ; free physical = 41042 ; free virtual = 57641 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.13 . Memory (MB): peak = 9115.297 ; gain = 29.477 ; free physical = 41025 ; free virtual = 57623 Read Physdb Files: Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.72 . Memory (MB): peak = 9115.297 ; gain = 62.438 ; free physical = 41025 ; free virtual = 57623 
+// Tcl Message: Restored from archive | CPU: 0.990000 secs | Memory: 46.421051 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.72 . Memory (MB): peak = 9115.297 ; gain = 62.438 ; free physical = 41025 ; free virtual = 57623 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9115.297 ; gain = 0.000 ; free physical = 41025 ; free virtual = 57623 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 59 instances were transformed.   RAM16X1D => RAM32X1D (RAMD32(x2)): 4 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 42 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 9 instances   RAM64M => RAM64M (RAMD64E(x4)): 4 instances  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// [GUI Memory]: 190 MB (+6849kb) [00:00:37]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 9357.844 ; gain = 1310.031 ; free physical = 40621 ; free virtual = 57227 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.5s
+// Device view-level: 0.0
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 200 MB (+153kb) [00:00:38]
+// [GUI Memory]: 214 MB (+4900kb) [00:00:39]
+// [GUI Memory]: 226 MB (+890kb) [00:00:39]
+// WARNING: HEventQueue.dispatchEvent() is taking  1310 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// Elapsed time: 28 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Report Utilization"); // a (RDIResource.BaseDialog_OK)
+// 'cD' command handler elapsed time: 15 seconds
+dismissDialog("Report Utilization"); // a (dialog1)
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 237 MB (+6kb) [00:00:57]
+// [GUI Memory]: 250 MB (+391kb) [00:00:57]
+// [GUI Memory]: 262 MB (+82kb) [00:00:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,386 MB. GUI used memory: 185 MB. Current time: 1/24/26, 3:10:41 PM CET
+dismissDialog("Report Utilization"); // bj (Report Utilization Progress)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Methodology Violations"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Methodology Violations"); // aH (dialog2)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog3)
+// Elapsed Time for: 'L.f': 02m:00s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 78 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Sources_search"); // v (RDIResource.AbstractSearchablePanel_SHOW_SEARCH, Sources_search): TRUE
+// [GUI Memory]: 276 MB (+339kb) [00:02:25]
+// [GUI Memory]: 290 MB (+726kb) [00:02:29]
+// [Engine Memory]: 3,494 MB (+69558kb) [00:02:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,494 MB. GUI used memory: 208 MB. Current time: 1/24/26, 3:12:16 PM CET
+// Elapsed time: 13 seconds
+setText("PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD", "cv32a6_"); // OverlayTextField (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE_SEARCH_FIELD)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ariane_testharness (ariane_testharness.sv), cva6_config_pkg (cv32a6_im_contest_config_pkg.sv)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, ariane_testharness (ariane_testharness.sv), cva6_config_pkg (cv32a6_im_contest_config_pkg.sv)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("cv32a6_im_contest_config_pkg.sv", 232, 225); // ac (cv32a6_im_contest_config_pkg.sv)
+selectCodeEditor("cv32a6_im_contest_config_pkg.sv", 232, 282); // ac (cv32a6_im_contest_config_pkg.sv)
+selectCodeEditor("cv32a6_im_contest_config_pkg.sv", 237, 308); // ac (cv32a6_im_contest_config_pkg.sv)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02m:24s
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 16); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 17, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Elapsed Time for: 'L.f': 02m:28s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 02m:30s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,600 MB. GUI used memory: 221 MB. Current time: 1/24/26, 3:12:36 PM CET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,728 MB (+62241kb) [00:03:59]
+// [GUI Memory]: 305 MB (+418kb) [00:03:59]
+// Elapsed Time for: 'L.f': 03m:40s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 03m:42s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,728 MB. GUI used memory: 228 MB. Current time: 1/24/26, 3:13:46 PM CET
+// Elapsed time: 135 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 17, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7z020clg400-1 Top: cva6_zybo_z7_20 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background", "Open Elaborated Design"); // a (RDIResource.ProgressDialog_BACKGROUND)
+// TclEventType: ELABORATE_START
+// TclEventType: MSGMGR_REFRESH_MSG
+// HMemoryUtils.trashcanNow. Engine heap size: 4,338 MB. GUI used memory: 229 MB. Current time: 1/24/26, 3:15:01 PM CET
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 4,862 MB. GUI used memory: 226 MB. Current time: 1/24/26, 3:15:15 PM CET
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,880 MB. GUI used memory: 226 MB. Current time: 1/24/26, 3:15:16 PM CET
+// [Engine Memory]: 4,880 MB (+1012841kb) [00:05:33]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1s
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes. INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes INFO: [Synth 8-7075] Helper process launched with PID 627323 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 9954.168 ; gain = 371.758 ; free physical = 42038 ; free virtual = 58629 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-11241] undeclared symbol 'dout', assumed default net type 'wire' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/ariane-ethernet/dualmem_widen8.sv:88] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 4 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 4 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_xbar' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_xbar.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'addr_decode' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/addr_decode.sv:30] 
+// Tcl Message: 	Parameter NoIndices bound to: 32'b00000000000000000000000000001010  	Parameter NoRules bound to: 32'b00000000000000000000000000001010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'addr_decode' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/addr_decode.sv:30] INFO: [Synth 8-6157] synthesizing module 'axi_demux' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_demux.sv:19] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100  	Parameter NoMstPorts bound to: 32'b00000000000000000000000000001011  	Parameter MaxTrans bound to: 32'b00000000000000000000000000000001  	Parameter AxiLookBits bound to: 32'b00000000000000000000000000000100  	Parameter UniqueIds bound to: 1'b0  	Parameter FallThrough bound to: 1'b0  	Parameter SpillAw bound to: 1'b1  	Parameter SpillW bound to: 1'b1  	Parameter SpillB bound to: 1'b1  	Parameter SpillAr bound to: 1'b1  	Parameter SpillR bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_demux_id_counters' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_demux.sv:576] 
+// Tcl Message: 	Parameter AxiIdBits bound to: 32'b00000000000000000000000000000100  	Parameter CounterWidth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_demux.sv:626] INFO: [Synth 8-6157] synthesizing module 'delta_counter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/delta_counter.sv:13] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000000001  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'fifo_v3' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000001011  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/lzc.sv:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001011  	Parameter MODE bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/lzc.sv:25] INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized3' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized3' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000001011  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6155] done synthesizing module 'axi_demux' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_demux.sv:19] INFO: [Synth 8-6157] synthesizing module 'axi_err_slv' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_err_slv.sv:19] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100  	Parameter Resp bound to: 2'b11  	Parameter ATOPs bound to: 1'b1  	Parameter MaxTrans bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_atop_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_atop_filter.sv:37] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100  	Parameter AxiMaxWriteTxns bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b1  	Parameter DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'counter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/counter.sv:14] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/delta_counter.sv:13] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/delta_counter.sv:13] INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/counter.sv:14] INFO: [Synth 8-6155] done synthesizing module 'axi_err_slv' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_err_slv.sv:19] INFO: [Synth 8-6157] synthesizing module 'axi_mux' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_mux.sv:27] 
+// Tcl Message: 	Parameter SlvAxiIDWidth bound to: 32'b00000000000000000000000000000100  	Parameter NoSlvPorts bound to: 32'b00000000000000000000000000000010  	Parameter MaxWTrans bound to: 32'b00000000000000000000000000000001  	Parameter FallThrough bound to: 1'b0  	Parameter SpillAw bound to: 1'b1  	Parameter SpillW bound to: 1'b1  	Parameter SpillB bound to: 1'b1  	Parameter SpillAr bound to: 1'b1  	Parameter SpillR bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_id_prepend' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_id_prepend.sv:18] 
+// Tcl Message: 	Parameter NoBus bound to: 1 - type: integer  	Parameter AxiIdWidthSlvPort bound to: 32'b00000000000000000000000000000100  	Parameter AxiIdWidthMstPort bound to: 32'b00000000000000000000000000000101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_id_prepend' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/axi/src/axi_id_prepend.sv:18] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000010  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/lzc.sv:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000000010  	Parameter MODE bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/lzc.sv:25] INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized4' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized4' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized4' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized4' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized4' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized4' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized5' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized5' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized5' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized5' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000010  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized6' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized6' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized6' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized6' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized7' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized7' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: 	Parameter IdcodeValue bound to: 613749187 - type: integer  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dmi_jtag.sv:101] INFO: [Synth 8-6157] synthesizing module 'dmi_jtag_tap' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:19] 
+// Tcl Message: 	Parameter IrLength bound to: 32'b00000000000000000000000000000101  	Parameter IdcodeValue bound to: 613749187 - type: integer  
+// Tcl Message: 	Parameter NrHarts bound to: 32'b00000000000000000000000000000001  	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter SelectableHarts bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'dm_csrs' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_csrs.sv:18] 
+// Tcl Message: 	Parameter NrHarts bound to: 32'b00000000000000000000000000000001  	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter SelectableHarts bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_csrs.sv:294] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_csrs.sv:360] INFO: [Synth 8-6157] synthesizing module 'fifo_v2__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13] 
+// Tcl Message: 	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized5' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized5' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6155] done synthesizing module 'fifo_v2__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13] INFO: [Synth 8-6155] done synthesizing module 'dm_csrs' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_csrs.sv:18] INFO: [Synth 8-6157] synthesizing module 'dm_sba' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_sba.sv:18] 
+// Tcl Message: 	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter ReadByteEnable bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_sba.sv:72] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_sba.sv:101] INFO: [Synth 8-6155] done synthesizing module 'dm_sba' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_sba.sv:18] INFO: [Synth 8-6157] synthesizing module 'dm_mem' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/riscv-dbg/src/dm_mem.sv:19] 
+// Tcl Message: 	Parameter NrHarts bound to: 32'b00000000000000000000000000000001  	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter SelectableHarts bound to: 1'b1  	Parameter DmBaseAddress bound to: 32'b00000000000000000001000000000000  
+// Tcl Message: 	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/axi_adapter.sv:486] INFO: [Synth 8-6155] done synthesizing module 'axi_adapter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/axi_adapter.sv:19] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ariane' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/src/ariane.sv:17] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cva6' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cva6.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cva6_hpdcache_subsystem' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_hpdcache_subsystem.sv:15] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cva6_icache' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_icache.sv:28] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram_cache' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/common/local/util/sram_cache.sv:21] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 23 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  	Parameter BYTE_ACCESS bound to: 0 - type: integer  	Parameter TECHNO_CUT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/common/local/util/sram.sv:21] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 23 - type: integer  	Parameter USER_WIDTH bound to: 1 - type: integer  	Parameter USER_EN bound to: 0 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'tc_sram_fpga_wrapper' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/common/local/util/tc_sram_fpga_wrapper.sv:10] 
+// Tcl Message: 	Parameter NumWords bound to: 256 - type: integer  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter ByteWidth bound to: 8 - type: integer  	Parameter NumPorts bound to: 1 - type: integer  	Parameter Latency bound to: 1 - type: integer  	Parameter SimInit bound to: none - type: string  	Parameter PrintSimCfg bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'SyncSpRamBeNx64' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv:28] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 8 - type: integer  	Parameter DATA_DEPTH bound to: 256 - type: integer  	Parameter OUT_REGS bound to: 0 - type: integer  	Parameter SIM_INIT bound to: 1 - type: integer  
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 128 - type: integer  	Parameter USER_WIDTH bound to: 128 - type: integer  	Parameter USER_EN bound to: 0 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  	Parameter BYTE_ACCESS bound to: 0 - type: integer  	Parameter TECHNO_CUT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/common/local/util/sram.sv:21] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 128 - type: integer  	Parameter USER_WIDTH bound to: 128 - type: integer  	Parameter USER_EN bound to: 0 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/common/local/util/sram.sv:21] INFO: [Synth 8-6155] done synthesizing module 'sram_cache__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/common/local/util/sram_cache.sv:21] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_icache.sv:220] INFO: [Synth 8-6157] synthesizing module 'lfsr' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/lfsr.sv:22] 
+// Tcl Message: 	Parameter LfsrWidth bound to: 32'b00000000000000000000000000001000  	Parameter OutWidth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lfsr' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/vendor/pulp-platform/common_cells/src/lfsr.sv:22] INFO: [Synth 8-6155] done synthesizing module 'cva6_icache' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_icache.sv:28] INFO: [Synth 8-6157] synthesizing module 'cva6_hpdcache_wrapper' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_hpdcache_wrapper.sv:15] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cva6_hpdcache_if_adapter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:12] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'cva6_hpdcache_if_adapter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:12] INFO: [Synth 8-6157] synthesizing module 'cva6_hpdcache_if_adapter__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:12] INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:194] INFO: [Synth 8-6155] done synthesizing module 'cva6_hpdcache_if_adapter__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:12] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:228] INFO: [Synth 8-6155] done synthesizing module 'hwpf_stride' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:27] 
+// Tcl Message: 	Parameter NUM_HW_PREFETCH bound to: 32'sb00000000000000000000000000000100  	Parameter N bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'hpdcache_prio_1hot_encoder' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_prio_1hot_encoder.sv:26] INFO: [Synth 8-6155] done synthesizing module 'hpdcache_rrarb' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv:28] 
+// Tcl Message: 	Parameter NINPUT bound to: 32'b00000000000000000000000000000100  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001011001  	Parameter ONE_HOT_SEL bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'hpdcache_mux' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_mux.sv:26] INFO: [Synth 8-6155] done synthesizing module 'hwpf_stride_arb' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_arb.sv:26] INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  	Parameter N bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter NINPUT bound to: 32'b00000000000000000000000000000010  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100010  	Parameter ONE_HOT_SEL bound to: 1'b1  	Parameter NINPUT bound to: 32'b00000000000000000000000000000010  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000000001  	Parameter ONE_HOT_SEL bound to: 1'b1  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: 	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:341] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:448] 
+// Tcl Message: INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_random.sv:115] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:720] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:781] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:239] 
+// Tcl Message: 	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: 	Parameter WR_WIDTH bound to: 32'sb00000000000000000000000001000000  	Parameter RD_WIDTH bound to: 32'sb00000000000000000000000001000000  	Parameter DEPTH bound to: 32'sb00000000000000000000000000000100  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000100  	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: 	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  	Parameter NINPUT bound to: 32'b00000000000000000000000000000010  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001010100  	Parameter ONE_HOT_SEL bound to: 1'b1  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000011  	Parameter N bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000011  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FEEDTHROUGH bound to: 1'b1  
+// Tcl Message: 	Parameter NINPUT bound to: 32'b00000000000000000000000000000011  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001010100  	Parameter ONE_HOT_SEL bound to: 1'b1  	Parameter NINPUT bound to: 32'b00000000000000000000000000000011  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001001001  	Parameter ONE_HOT_SEL bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv:73] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv:71] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/frontend/frontend.sv:235] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/issue_read_operands.sv:383] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000101  	Parameter ExtPrio bound to: 1'b1  	Parameter AxiVldRdy bound to: 1'b1  	Parameter NumIn bound to: 32'b00000000000000000000000000001000  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b1  	Parameter AxiVldRdy bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/alu.sv:308] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/include/ariane_pkg.sv:503] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/multiplier.sv:125] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/serdiv.sv:177] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/load_unit.sv:512] 
+// Tcl Message: 	Parameter Depth bound to: 32'b00000000000000000000000000000001  	Parameter Depth bound to: 32'b00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/load_store_unit.sv:525] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/csr_regfile.sv:335] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/csr_regfile.sv:1011] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/csr_regfile.sv:1973] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/csr_regfile.sv:2188] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/core/csr_regfile.sv:2447] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter NR_CORES bound to: 32'b00000000000000000000000000000001  	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/clint/axi_lite_interface.sv:78] 
+// Tcl Message: 	Parameter STAGES bound to: 32'b00000000000000000000000000000010  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/axi_mem_if/src/axi2mem.sv:192] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/axi_mem_if/src/axi2mem.sv:234] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/axi_mem_if/src/axi2mem.sv:122] 
+// Tcl Message: 	Parameter AxiAddrWidth bound to: 64 - type: integer  	Parameter AxiDataWidth bound to: 64 - type: integer  	Parameter AxiIdWidth bound to: 5 - type: integer  	Parameter AxiUserWidth bound to: 32 - type: integer  	Parameter InclUART bound to: 1'b1  	Parameter InclSPI bound to: 1'b0  	Parameter InclEthernet bound to: 1'b0  	Parameter InclGPIO bound to: 1'b0  	Parameter ADDR_WIDTH bound to: 32'sb00000000000000000000000000100000  	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000100000  
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'UART_IF_CTS' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:403] INFO: [Synth 8-638] synthesizing module 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:41] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_input_filter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:41] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'UART_IF_DSR' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:404] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'UART_IF_DCD' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:405] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: 	Parameter RATIO bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_clock_div' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd:29' bound to instance 'UART_BG2' of component 'slib_clock_div' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:754] INFO: [Synth 8-638] synthesizing module 'slib_clock_div' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd:41] 
+// Tcl Message: 	Parameter RATIO bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_clock_div' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd:41] INFO: [Synth 8-3491] module 'slib_edge_detect' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd:28' bound to instance 'UART_RCLK' of component 'slib_edge_detect' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:760] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_fifo' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:29' bound to instance 'UART_TXFF' of component 'slib_fifo' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:767] INFO: [Synth 8-638] synthesizing module 'slib_fifo' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:48] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_fifo' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:48] 
+// Tcl Message: 	Parameter WIDTH bound to: 11 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_fifo' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:29' bound to instance 'UART_RXFF' of component 'slib_fifo' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:786] INFO: [Synth 8-638] synthesizing module 'slib_fifo__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:48] 
+// Tcl Message: 	Parameter WIDTH bound to: 11 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_counter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd:29' bound to instance 'RX_BRC' of component 'slib_counter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd:122] INFO: [Synth 8-638] synthesizing module 'slib_counter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd:46] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_counter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd:46] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  	Parameter THRESHOLD bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_mv_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd:29' bound to instance 'RX_MVF' of component 'slib_mv_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd:137] INFO: [Synth 8-638] synthesizing module 'slib_mv_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd:44] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  	Parameter THRESHOLD bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_mv_filter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd:44] 
+// Tcl Message: 	Parameter SIZE bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'RX_IFSB' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd:150] INFO: [Synth 8-638] synthesizing module 'slib_input_filter__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:41] 
+// Tcl Message: 	Parameter SIZE bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_timer/timer.sv:92] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/src/apb_timer/timer.sv:116] 
+// Tcl Message: 	Parameter N_SOURCE bound to: 32'sb00000000000000000000000000011110  	Parameter N_TARGET bound to: 32'sb00000000000000000000000000000010  	Parameter MAX_PRIO bound to: 32'sb00000000000000000000000000000111  	Parameter N_SOURCE bound to: 32'sb00000000000000000000000000011110  	Parameter MAX_PRIO bound to: 32'sb00000000000000000000000000000111  	Parameter ALGORITHM bound to: SEQUENTIAL - type: string  	Parameter N_SOURCE bound to: 32'sb00000000000000000000000000011110  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/rv_plic/rtl/plic_regmap.sv:46] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/rv_plic/rtl/plic_regmap.sv:198] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001000000  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv:39] INFO: [Synth 8-226] default block is never used [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv:39] 
+// Tcl Message: Reason is one or more of the following : 	1: Only 1 word in RAM  RAM "mem_reg" dissolved into registers 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 10455.129 ; gain = 872.719 ; free physical = 41501 ; free virtual = 58109 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 10455.129 ; gain = 872.719 ; free physical = 41475 ; free virtual = 58088 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 10455.129 ; gain = 872.719 ; free physical = 41475 ; free virtual = 58088 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.67 . Memory (MB): peak = 10464.668 ; gain = 0.000 ; free physical = 41789 ; free virtual = 58399 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cva6_zybo_z7_20_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/cva6_zybo_z7_20_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/zybo_z7_20.xdc] Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/zybo_z7_20.xdc] Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cva6_zybo_z7_20_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/cva6_zybo_z7_20_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design. 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 10676.492 ; gain = 0.000 ; free physical = 41719 ; free virtual = 58329 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 14 instances were transformed.   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances  
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 10960.652 ; gain = 1378.242 ; free physical = 41499 ; free virtual = 58112 
+// Tcl Message: 387 Infos, 346 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:00:33 . Memory (MB): peak = 10960.652 ; gain = 1386.246 ; free physical = 41499 ; free virtual = 58112 
+// Tcl Message: INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 4573.682; main = 4557.167; forked = 443.752 INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 11488.621; main = 10866.406; forked = 1033.488 
+// Elapsed Time for: 'o.a': 33s
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 25 seconds
+dismissDialog("Open Elaborated Design"); // bj (Open Elaborated Design Progress)
+// [GUI Memory]: 322 MB (+1667kb) [00:05:37]
+// Elapsed Time for: 'L.f': 05m:18s
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20, i_ariane (ariane)]", 3, false); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE)
+// [GUI Memory]: 341 MB (+2791kb) [00:05:49]
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20, i_ariane (ariane)]", 3, false); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20, i_ariane (ariane)]", 3, true, false, false, false, false, true); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_DEFINITION
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+// [GUI Memory]: 359 MB (+1917kb) [00:05:58]
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+// Elapsed time: 232 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Utilization]", 31, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design", "Synthesis is Out-of-date"); // a (PAResourceQtoS.StaleRunDialog_OPEN_DESIGN)
+dismissDialog("Synthesis is Out-of-date"); // bI (dialog4)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 5,162 MB. GUI used memory: 258 MB. Current time: 1/24/26, 3:19:41 PM CET
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 5,162 MB (+40230kb) [00:09:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,162 MB. GUI used memory: 256 MB. Current time: 1/24/26, 3:19:42 PM CET
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.28 . Memory (MB): peak = 10960.652 ; gain = 0.000 ; free physical = 43971 ; free virtual = 60567 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1823 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc] for cell 'i_xlnx_clk_gen/inst' Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc] for cell 'i_xlnx_clk_gen/inst' Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc] for cell 'i_xlnx_clk_gen/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc:54] INFO: [Timing 38-2] Deriving generated clocks [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc:54] 
+// Tcl Message: Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc] for cell 'i_axi_dwidth_converter_dm_master/inst' Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc] for cell 'i_axi_dwidth_converter_dm_slave/inst' 
+// Tcl Message: Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc] for cell 'i_axi_dwidth_converter_dm_slave/inst' 
+// Tcl Message: INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-1687] 31 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10979.016 ; gain = 0.000 ; free physical = 43950 ; free virtual = 60546 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 60 instances were transformed.   RAM16X1D => RAM32X1D (RAMD32(x2)): 4 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 42 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 10 instances   RAM64M => RAM64M (RAMD64E(x4)): 4 instances  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 11100.074 ; gain = 139.422 ; free physical = 43967 ; free virtual = 60568 
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// 'cD' command handler elapsed time: 3 seconds
+dismissDialog("Report Utilization"); // a (dialog5)
+// Device view-level: 0.1
+// HMemoryUtils.trashcanNow. Engine heap size: 5,170 MB. GUI used memory: 268 MB. Current time: 1/24/26, 3:20:25 PM CET
+// Device view-level: 0.0
+// Elapsed time: 39 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; -0.04164135828614235 ; -0.07096190005540848 ; 0.033620189875364304 ; 0.0 ;  ; 0.0 ; 0.27169162034988403 ; 0 ; 2 CW, 15 Warn ;  ;  ; 20228 ; 14702 ; 62.5 ; 0 ; 4 ; Sat Jan 24 14:40:13 CET 2026 ; 00:02:11 ; Vivado Implementation Defaults* (Vivado Implementation 2024) ; Vivado Implementation Default Reports (Vivado Implementation 2024) ; xc7z020clg400-1 ; emmk-prj1 ; Default settings for Implementation.", 1, "impl_1", 0, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 46, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: CURR_DESIGN_SET
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// Tcl Message: current_design impl_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Report Utilization"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Report Utilization"); // a (dialog6)
+// Tcl Message: report_utilization -name utilization_2 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 5,211 MB. GUI used memory: 298 MB. Current time: 1/24/26, 3:20:41 PM CET
+dismissDialog("Report Utilization"); // bj (Report Utilization Progress)
+expandTreeTable((HResource) null, "i_ariane (ariane) ; 9839 ; 4840 ; 108 ; 12 ; 3114 ; 9683 ; 156 ; 12.5 ; 4 ; 0 ; 0 ; 0", 1); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+// Elapsed time: 276 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectLabel((HResource) null, "Dashboard"); // b (Dashboard)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 5,241 MB. GUI used memory: 294 MB. Current time: 1/24/26, 3:29:16 PM CET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 403 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (PAResourceCommand.PACommandNames_REPORTS_WINDOW)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // Q.a (dialog7)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 12 seconds
+selectView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary", 75, 121, 1059, 592); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+selectView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary", 279, 100, 1059, 592); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+selectView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary", 212, 266, 1059, 592); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+selectView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary", 333, 171, 1059, 592); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+selectButton(PAResourceOtoP.ProjectDashboardGadget_TABLE, (String) null); // B (PAResourceOtoP.ProjectDashboardGadget_TABLE)
+// Tcl Command: 'set_property view.type table [get_dashboard_gadgets [list {utilization_1}]]'
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: set_property view.type table [get_dashboard_gadgets [list {utilization_1}]] 
+// Tcl Message: 1 
+selectButton(PAResourceOtoP.ProjectDashboardGadget_GRAPH, "PAResourceOtoP.ProjectDashboardGadget_TABLE"); // B (PAResourceOtoP.ProjectDashboardGadget_GRAPH, PAResourceOtoP.ProjectDashboardGadget_TABLE)
+// Tcl Command: 'set_property view.type graph [get_dashboard_gadgets [list {utilization_1}]]'
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: set_property view.type graph [get_dashboard_gadgets [list {utilization_1}]] 
+// Tcl Message: 1 
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(RDIResource.HToolBar_COLLAPSE_ALL, "Dashboard_collapse_all"); // B (RDIResource.HToolBar_COLLAPSE_ALL, Dashboard_collapse_all)
+selectButton(RDIResource.HToolBar_COLLAPSE_ALL, "Dashboard_collapse_all"); // B (RDIResource.HToolBar_COLLAPSE_ALL, Dashboard_collapse_all)
+selectButton(RDIResource.HToolBar_EXPAND_ALL, "Dashboard_expand_all"); // B (RDIResource.HToolBar_EXPAND_ALL, Dashboard_expand_all)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 78 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Implementation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Implementation Completed"); // Q.a (dialog8)
+selectView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary", 188, 300, 1059, 592); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 45, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// HMemoryUtils.trashcanNow. Engine heap size: 5,273 MB. GUI used memory: 296 MB. Current time: 1/24/26, 3:34:21 PM CET
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "gen_example_coprocessor.i_cvxif_coprocessor (cvxif_example_coprocessor) ; 70 ; 41 ; 0 ; 0 ; 44 ; 70 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0", 2, "gen_example_coprocessor.i_cvxif_coprocessor (cvxif_example_coprocessor)", 0, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // g (PAResourceOtoP.ProjectTab_RELOAD)
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,257 MB. GUI used memory: 238 MB. Current time: 1/24/26, 3:34:30 PM CET
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 5,257 MB. GUI used memory: 238 MB. Current time: 1/24/26, 3:34:30 PM CET
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,257 MB. GUI used memory: 226 MB. Current time: 1/24/26, 3:34:33 PM CET
+// DeviceView Instantiated
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.6s
+// WARNING: HEventQueue.dispatchEvent() is taking  1634 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.25 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39831 ; free virtual = 56402 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1675 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39834 ; free virtual = 56405 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39834 ; free virtual = 56405 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39834 ; free virtual = 56405 Read PlaceDB: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.54 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39836 ; free virtual = 56407 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39836 ; free virtual = 56407 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.11 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39836 ; free virtual = 56407 Read Physdb Files: Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:00.68 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39836 ; free virtual = 56407 
+// Tcl Message: Restored from archive | CPU: 0.890000 secs | Memory: 33.899078 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:00.68 . Memory (MB): peak = 11100.074 ; gain = 0.000 ; free physical = 39836 ; free virtual = 56407 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 11201.074 ; gain = 101.000 ; free physical = 39747 ; free virtual = 56327 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1080 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Reloading"); // bj (Reloading Progress)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20, i_ariane (ariane)]", 3, false); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20, i_ariane (ariane)]", 3); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // Q.a (dialog9)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (PAResourceCommand.PACommandNames_ZOOM_OUT, Schematic_zoom_out)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (PAResourceCommand.PACommandNames_ZOOM_OUT, Schematic_zoom_out)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20]", 0, true); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 46, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+selectButton(RDIResource.BaseDialog_OK, "OK", "Report Utilization"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Report Utilization"); // a (dialog10)
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 378 MB (+302kb) [00:25:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,241 MB. GUI used memory: 301 MB. Current time: 1/24/26, 3:35:17 PM CET
+dismissDialog("Report Utilization"); // bj (Report Utilization Progress)
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "i_ariane (ariane) ; 9342 ; 4762 ; 135 ; 3 ; 3029 ; 9250 ; 92 ; 12.5 ; 4 ; 0 ; 0 ; 0", 1, "i_ariane (ariane)", 0, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+expandTreeTable((HResource) null, "i_ariane (ariane) ; 9342 ; 4762 ; 135 ; 3 ; 3029 ; 9250 ; 92 ; 12.5 ; 4 ; 0 ; 0 ; 0", 1); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+// Elapsed time: 62 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Timing Summary]", 40, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Report Timing Summary"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Report Timing Summary"); // ag (dialog11)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Power]", 47, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_POWER_ESTIMATION
+setText(PAResourceTtoZ.XPowerSettingsDialog_RESULTS_NAME, "power_1"); // R (PAResourceTtoZ.XPowerSettingsDialog_RESULTS_NAME)
+selectButton(PAResourceTtoZ.XPowerSettingsDialog_CANCEL, "Cancel", "Report Power"); // a (PAResourceTtoZ.XPowerSettingsDialog_CANCEL)
+dismissDialog("Report Power"); // a (dialog12)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+selectButton(PAResourceQtoS.SchematicView_REMOVE, "Schematic_remove"); // B (PAResourceQtoS.SchematicView_REMOVE, Schematic_remove)
+selectButton(PAResourceQtoS.SchematicView_REMOVE, "Schematic_remove"); // B (PAResourceQtoS.SchematicView_REMOVE, Schematic_remove)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // B (PAResourceQtoS.SchematicView_PREVIOUS, Schematic_previousview)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "unselect_objects"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // B (PAResourceQtoS.SchematicView_PREVIOUS, Schematic_previousview)
+selectButton(PAResourceQtoS.SchematicView_PREVIOUS, "Schematic_previousview"); // B (PAResourceQtoS.SchematicView_PREVIOUS, Schematic_previousview)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20]", 0, true); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE) - Node
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20, i_ariane (ariane)]", 3); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20]", 0, true); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE) - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[cva6_zybo_z7_20]", 0, true, false, false, false, false, true); // aF (PAResourceItoN.NetlistTreeView_NETLIST_TREE) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_DEFINITION
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+// Device view-level: 0.0
+// Device view-level: 0.5
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Open Dataflow Design]", 38, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: create_dataflow_design 
+// Tcl Message: INFO: [Vivado_Tcl 4-1924] Creating dataflow design from design 'impl_1'. Use the current_design command to change the design from which dataflow design is created. 
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 5,253 MB. GUI used memory: 286 MB. Current time: 1/24/26, 3:37:20 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Implflow 47-2768] Generation of Dataflow netlist complete, took 0 seconds 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 11201.074 ; gain = 0.000 ; free physical = 44008 ; free virtual = 60577 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11201.074 ; gain = 0.000 ; free physical = 43993 ; free virtual = 60562 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 49 instances were transformed.   RAM32M => RAM32M: 40 instances   RAM32X1D => RAM32X1D: 9 instances  
+// TclEventType: CURR_DESIGN_SET
+dismissDialog("Open Dataflow Design"); // bj (Open Dataflow Design Progress)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false, false, false, false, false, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Double Click
+// Tcl Message: current_design impl_1 
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// ui.utils.l: ERROR (Generate Schematic Generating schematic..): Another long task is already running: ui.utils.l: Previous LongTask (Generate Schematic Generating schematic..) stack:  	at ui.dlg.c.bj.fxC(SourceFile:673) 	at ui.views.O.w.a(SourceFile:2730) 	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87) 	at j
+selectButton("OptionPane.button", "OK", "Background Task"); // JButton (OptionPane.button)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Power]", 47, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_POWER_ESTIMATION
+setText(PAResourceTtoZ.XPowerSettingsDialog_RESULTS_NAME, "power_1"); // R (PAResourceTtoZ.XPowerSettingsDialog_RESULTS_NAME)
+selectButton(PAResourceTtoZ.XPowerSettingsDialog_CANCEL, "Cancel", "Report Power"); // a (PAResourceTtoZ.XPowerSettingsDialog_CANCEL)
+dismissDialog("Report Power"); // a (dialog12)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 46, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+selectButton(RDIResource.BaseDialog_OK, "OK", "Report Utilization"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Report Utilization"); // a (dialog13)
+// Tcl Message: report_utilization -name utilization_2 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 397 MB (+843kb) [00:27:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,365 MB. GUI used memory: 326 MB. Current time: 1/24/26, 3:37:34 PM CET
+dismissDialog("Report Utilization"); // bj (Report Utilization Progress)
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "cva6_zybo_z7_20 ; 19810 ; 14624 ; 404 ; 9 ; 6889 ; 19570 ; 240 ; 62.5 ; 4 ; 9 ; 3 ; 1", 0, "cva6_zybo_z7_20", 0, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+collapseTreeTable((HResource) null, "cva6_zybo_z7_20 ; 19810 ; 14624 ; 404 ; 9 ; 6889 ; 19570 ; 240 ; 62.5 ; 4 ; 9 ; 3 ; 1", 0); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "cva6_zybo_z7_20 ; 19810 ; 14624 ; 404 ; 9 ; 6889 ; 19570 ; 240 ; 62.5 ; 4 ; 9 ; 3 ; 1", 0, "cva6_zybo_z7_20", 0, true, false, false, false, false, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "cva6_zybo_z7_20 ; 19810 ; 14624 ; 404 ; 9 ; 6889 ; 19570 ; 240 ; 62.5 ; 4 ; 9 ; 3 ; 1", 0, "cva6_zybo_z7_20", 0, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+expandTreeTable((HResource) null, "cva6_zybo_z7_20 ; 19810 ; 14624 ; 404 ; 9 ; 6889 ; 19570 ; 240 ; 62.5 ; 4 ; 9 ; 3 ; 1", 0); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy))
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 33, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: CURR_DESIGN_SET
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Tcl Message: current_design synth_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // g (PAResourceOtoP.ProjectTab_RELOAD)
+// Tcl Message: refresh_design 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,429 MB. GUI used memory: 309 MB. Current time: 1/24/26, 3:37:58 PM CET
+// [Engine Memory]: 5,429 MB (+9208kb) [00:28:15]
+// Engine heap size: 5,429 MB. GUI used memory: 309 MB. Current time: 1/24/26, 3:37:58 PM CET
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 5,498 MB. GUI used memory: 303 MB. Current time: 1/24/26, 3:38:01 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1131 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 11237.449 ; gain = 0.000 ; free physical = 43790 ; free virtual = 60359 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1825 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc] for cell 'i_xlnx_clk_gen/inst' Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen_board.xdc] for cell 'i_xlnx_clk_gen/inst' Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc] for cell 'i_xlnx_clk_gen/inst' 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc:54] INFO: [Timing 38-2] Deriving generated clocks [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc:54] 
+// Tcl Message: Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_master/xlnx_axi_dwidth_converter_dm_master_clocks.xdc] for cell 'i_axi_dwidth_converter_dm_master/inst' Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc] for cell 'i_axi_dwidth_converter_dm_slave/inst' 
+// Tcl Message: Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave.gen/sources_1/ip/xlnx_axi_dwidth_converter_dm_slave/xlnx_axi_dwidth_converter_dm_slave_clocks.xdc] for cell 'i_axi_dwidth_converter_dm_slave/inst' 
+// Tcl Message: INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Tcl Message: INFO: [Project 1-1687] 31 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design. 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 11422.312 ; gain = 221.238 ; free physical = 43724 ; free virtual = 60302 
+dismissDialog("Reloading"); // bj (Reloading Progress)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog14)
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC, "187 Cells"); // g (PAResourceItoN.NetlistSchematicView_SHOW_CELLS_IN_THIS_SCHEMATIC)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC, "9 I/O Ports"); // g (PAResourceItoN.NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC)
+selectButton(PAResourceItoN.NetlistSchematicView_SHOW_NETS_IN_THIS_SCHEMATIC, "4969 Nets"); // g (PAResourceItoN.NetlistSchematicView_SHOW_NETS_IN_THIS_SCHEMATIC)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B (PAResourceCommand.PACommandNames_ZOOM_FIT, Schematic_zoom_fit)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (PAResourceCommand.PACommandNames_ZOOM_OUT, Schematic_zoom_out)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B (PAResourceCommand.PACommandNames_ZOOM_OUT, Schematic_zoom_out)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Device view-level: 0.6
+// Device view-level: 0.9
+// HMemoryUtils.trashcanNow. Engine heap size: 5,494 MB. GUI used memory: 330 MB. Current time: 1/24/26, 3:38:53 PM CET
+// Device view-level: 1.2
+// Device view-level: 1.5
+// Device view-level: 1.8
+// [GUI Memory]: 421 MB (+3682kb) [00:29:10]
+// Device view-level: 2.1
+// HMemoryUtils.trashcanNow. Engine heap size: 5,494 MB. GUI used memory: 329 MB. Current time: 1/24/26, 3:38:53 PM CET
+// Device view-level: 2.4
+// Device view-level: 3.0
+// Device view-level: 3.5
+// Device view-level: 3.8
+// Device view-level: 3.5
+// HMemoryUtils.trashcanNow. Engine heap size: 5,495 MB. GUI used memory: 330 MB. Current time: 1/24/26, 3:38:54 PM CET
+// Device view-level: 2.7
+// Device view-level: 1.8
+// Device view-level: 1.5
+// Device view-level: 1.2
+// Device view-level: 0.9
+// [Engine Memory]: 6,858 MB (+1213024kb) [00:29:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,858 MB. GUI used memory: 332 MB. Current time: 1/24/26, 3:38:55 PM CET
+// Device view-level: 0.6
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 33, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 33, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 33, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,920 MB. GUI used memory: 333 MB. Current time: 1/24/26, 3:39:29 PM CET
+// Device view-level: 0.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -109666, 123310, false, false, false, true, false); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 234, 117, 1193, 545, false, false, false, true, false); // G (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice) - Popup Trigger
+/********** leftMouseClick (948, 350, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+selectMenu(PAResourceOtoP.PAGraphicalView_VIEW, "View"); // am (PAResourceOtoP.PAGraphicalView_VIEW, View)
+selectMenu(PAResourceEtoH.FloorplanEditor_METRICS, "Metrics"); // am (PAResourceEtoH.FloorplanEditor_METRICS, Metrics)
+selectMenu(PAResourceEtoH.FloorplanEditor_METRICS, "Metrics"); // am (PAResourceEtoH.FloorplanEditor_METRICS, Metrics)
+selectMenu(PAResourceOtoP.PAGraphicalView_VIEW, "View"); // am (PAResourceOtoP.PAGraphicalView_VIEW, View)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -229814, 53751); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor)
+/********** leftMouseClick (834, 284, true); // t (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice_editor) **********/
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 48, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary", 83, 153, 1059, 592); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+selectView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary", 197, 125, 1059, 592); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)

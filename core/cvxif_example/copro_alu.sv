@@ -47,13 +47,6 @@ module copro_alu
   assign we_o     = we_q;
 
   always_comb begin
-    ///////
-    // Valeurs par défaut
-    ar = '0; ai = '0; br = '0; bi = '0;
-    p_rr = '0; p_ii = '0; p_ri = '0; p_ir = '0;
-    sum_r = '0; sum_i = '0;
-    ///////  
-  
     case (opcode_i)
       cvxif_instr_pkg::NOP: begin
         result_n = '0;
