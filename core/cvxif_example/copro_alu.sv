@@ -31,13 +31,6 @@ module copro_alu
     output logic                  valid_o,
     output logic                  we_o
 );
-//////////////////
-  // Variables intermédiaires pour la multiplication complexe
-  // Déclarées en dehors du case pour éviter les soucis de scope SystemVerilog
-  logic signed [15:0] ar, ai, br, bi;
-  logic signed [31:0] p_rr, p_ii, p_ri, p_ir;
-  logic signed [31:0] sum_r, sum_i;
-//////////////////
 
   logic [XLEN-1:0] result_n, result_q;
   hartid_t hartid_n, hartid_q;
@@ -142,43 +135,6 @@ module copro_alu
         rd_n = 5'b01010;
         we_n = 1'b1;
       end
-      
-      ////////
-      cvxif_instr_pkg::CPLX_MUL: begin
-        // Découpage : RS1 = {ImagA, RealA}, RS2 = {ImagB, RealB}
-        // Convention Little Endian : bits 15:0 = Real, 31:16 = Imag
-        ar = registers_i[0][15:0];
-        ai = registers_i[0][31:16];
-        br = registers_i[1][15:0];
-        bi = registers_i[1][31:16];
-
-        // 4 Multiplications (Les DSP du FPGA feront ça très bien)
-        p_rr = ar * br;
-        p_ii = ai * bi;
-        p_ri = ar * bi;
-        p_ir = ai * br;
-
-        // Formule KissFFT : sround( A*B )
-        // Real = Ar*Br - Ai*Bi
-        // Imag = Ar*Bi + Ai*Br
-        // sround(x) ajoute 1<<(FRACBITS-1) puis shift >> FRACBITS. Ici FRACBITS=15.
-        // Donc on ajoute 16384 (0x4000) et on shift de 15.
-        
-        sum_r = p_rr - p_ii + 32'd16384;
-        sum_i = p_ri + p_ir + 32'd16384;
-
-        // Packing du résultat : {Imag_Res, Real_Res}
-        // Le shift >>> 15 est arithmétique. On prend les 16 bits de poids faible du résultat shifté.
-        result_n[15:0]  = sum_r[30:15]; // Equivalent à (sum_r >>> 15)[15:0]
-        result_n[31:16] = sum_i[30:15];
-
-        hartid_n = hartid_i;
-        id_n     = id_i;
-        valid_n  = 1'b1;
-        rd_n     = rd_i;
-        we_n     = 1'b1;
-      end
-      ////////
       
       default: begin
         result_n = '0;
