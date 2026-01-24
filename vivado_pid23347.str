@@ -1,0 +1,517 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 23347
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Jan 24 10:28:42 CET 2026
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 6.14.0-37-generic
+OS Architecture: amd64
+Available processors (cores): 16
+LSB Release Description: DISTRIB_ID=Ubuntu
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 66, y = 32, width = 1854, height = 1048
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	riscv-contest
+User home directory: /home/riscv-contest
+User working directory: /home/riscv-contest/Documents/cva6-softcore-contest-personal
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.1/data:/tools/Xilinx/Vivado/2024.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.1/bin
+
+Vivado preferences file: /home/riscv-contest/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/riscv-contest/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/riscv-contest/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/riscv-contest/Documents/cva6-softcore-contest-personal/vivado.log
+Vivado journal file: 	/home/riscv-contest/Documents/cva6-softcore-contest-personal/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-23347-emmk-prj1
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/SharedData/2024.1/data:/tools/Xilinx/Vivado/2024.1/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.1/bin:/tools/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/riscv-contest/Documents/cva6-softcore-contest-personal:emmk-prj1_1769246912_23279
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.1/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.1
+XILINX_SDK: /tools/Xilinx/Vitis/2024.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,606 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,621 MB. GUI used memory: 68 MB. Current time: 1/24/26, 10:28:43 AM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // t (PAResourceEtoH.GettingStartedView_OPEN_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.xpr");
+// [GUI Memory]: 83 MB (+84315kb) [00:04:26]
+// [Engine Memory]: 1,619 MB (+1546033kb) [00:04:26]
+// Opening Vivado Project: /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.xpr. Version: Vivado v2024.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+9803kb) [00:04:27]
+// [Engine Memory]: 1,770 MB (+73179kb) [00:04:27]
+// [GUI Memory]: 119 MB (+18243kb) [00:04:27]
+// [GUI Memory]: 138 MB (+13684kb) [00:04:27]
+// [GUI Memory]: 159 MB (+14781kb) [00:04:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  1030 ms.
+// Tcl Message: open_project /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/cva6_fpga.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'. 
+// Project name: cva6_fpga; location: /home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bj (Open Project Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,889 MB. GUI used memory: 82 MB. Current time: 1/24/26, 10:33:03 AM CET
+// [Engine Memory]: 1,889 MB (+32286kb) [00:04:28]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 12 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7z020clg400-1 Top: cva6_zybo_z7_20 
+// [Engine Memory]: 2,251 MB (+280458kb) [00:04:44]
+// Elapsed time: 10 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background", "Open Elaborated Design"); // a (RDIResource.ProgressDialog_BACKGROUND)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,249 MB. GUI used memory: 90 MB. Current time: 1/24/26, 10:33:46 AM CET
+// Elapsed time: 37 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2024) ; Vivado Implementation Default Reports (Vivado Implementation 2024) ; xc7z020clg400-1 ;  ; Default settings for Implementation.", 1, "impl_1", 0, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// [GUI Memory]: 169 MB (+2577kb) [00:05:30]
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 20433 ; 14459 ; 14.5 ; 0 ; 9 ; Sat Jan 24 10:30:44 CET 2026 ; 00:02:31 ; Vivado Synthesis Defaults* (Vivado Synthesis 2024) ; Vivado Synthesis Default Reports (Vivado Synthesis 2024) ; xc7z020clg400-1 ; emmk-prj1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Node
+// [GUI Memory]: 199 MB (+22239kb) [00:05:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,321 MB. GUI used memory: 103 MB. Current time: 1/24/26, 10:34:08 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,321 MB. GUI used memory: 103 MB. Current time: 1/24/26, 10:34:16 AM CET
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+dismissDialog("Settings"); // d (dialog1)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,326 MB. GUI used memory: 120 MB. Current time: 1/24/26, 10:34:46 AM CET
+// TclEventType: ELABORATE_START
+// TclEventType: MSGMGR_REFRESH_MSG
+// [Engine Memory]: 2,538 MB (+182757kb) [00:06:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,864 MB. GUI used memory: 132 MB. Current time: 1/24/26, 10:35:08 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 3,209 MB. GUI used memory: 128 MB. Current time: 1/24/26, 10:35:16 AM CET
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,530 MB. GUI used memory: 128 MB. Current time: 1/24/26, 10:35:25 AM CET
+// [Engine Memory]: 3,530 MB (+907537kb) [00:06:50]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 217 MB (+9094kb) [00:06:51]
+// Xgd.load filename: /home/riscv-contest/Documents/cva6-softcore-contest-personal/./.Xil/Vivado-23347-emmk-prj1/xc7z020_detail.xgd_7F282F21 elapsed time: 0.5s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1123 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library. INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes. INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes INFO: [Synth 8-7075] Helper process launched with PID 102501 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 8819.883 ; gain = 387.758 ; free physical = 43723 ; free virtual = 56852 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-11241] undeclared symbol 'dout', assumed default net type 'wire' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/ariane-ethernet/dualmem_widen8.sv:88] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 4 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 4 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'AXI_BUS' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] INFO: [Synth 8-6157] synthesizing module 'AXI_BUS' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/tb/axi_intf.sv:19] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_xbar' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_xbar.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'addr_decode' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/addr_decode.sv:30] 
+// Tcl Message: 	Parameter NoIndices bound to: 32'b00000000000000000000000000001010  	Parameter NoRules bound to: 32'b00000000000000000000000000001010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'addr_decode' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/addr_decode.sv:30] INFO: [Synth 8-6157] synthesizing module 'axi_demux' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv:19] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100  	Parameter NoMstPorts bound to: 32'b00000000000000000000000000001011  	Parameter MaxTrans bound to: 32'b00000000000000000000000000000001  	Parameter AxiLookBits bound to: 32'b00000000000000000000000000000100  	Parameter UniqueIds bound to: 1'b0  	Parameter FallThrough bound to: 1'b0  	Parameter SpillAw bound to: 1'b1  	Parameter SpillW bound to: 1'b1  	Parameter SpillB bound to: 1'b1  	Parameter SpillAr bound to: 1'b1  	Parameter SpillR bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_demux_id_counters' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv:576] 
+// Tcl Message: 	Parameter AxiIdBits bound to: 32'b00000000000000000000000000000100  	Parameter CounterWidth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv:626] INFO: [Synth 8-6157] synthesizing module 'delta_counter' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/delta_counter.sv:13] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000000001  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'fifo_v3' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000001011  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lzc.sv:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001011  	Parameter MODE bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lzc.sv:25] INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized3' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized3' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000001011  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6155] done synthesizing module 'axi_demux' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_demux.sv:19] INFO: [Synth 8-6157] synthesizing module 'axi_err_slv' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_err_slv.sv:19] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100  	Parameter Resp bound to: 2'b11  	Parameter ATOPs bound to: 1'b1  	Parameter MaxTrans bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_atop_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_atop_filter.sv:37] 
+// Tcl Message: 	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100  	Parameter AxiMaxWriteTxns bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_atop_filter.sv:118] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_atop_filter.sv:268] INFO: [Synth 8-6157] synthesizing module 'stream_register' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/stream_register.sv:14] INFO: [Synth 8-6157] synthesizing module 'fifo_v2' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b1  	Parameter DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'counter' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/counter.sv:14] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/delta_counter.sv:13] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000001000  	Parameter STICKY_OVERFLOW bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/delta_counter.sv:13] INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/counter.sv:14] INFO: [Synth 8-6155] done synthesizing module 'axi_err_slv' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_err_slv.sv:19] INFO: [Synth 8-6157] synthesizing module 'axi_mux' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_mux.sv:27] 
+// Tcl Message: 	Parameter SlvAxiIDWidth bound to: 32'b00000000000000000000000000000100  	Parameter NoSlvPorts bound to: 32'b00000000000000000000000000000010  	Parameter MaxWTrans bound to: 32'b00000000000000000000000000000001  	Parameter FallThrough bound to: 1'b0  	Parameter SpillAw bound to: 1'b1  	Parameter SpillW bound to: 1'b1  	Parameter SpillB bound to: 1'b1  	Parameter SpillAr bound to: 1'b1  	Parameter SpillR bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'axi_id_prepend' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_id_prepend.sv:18] 
+// Tcl Message: 	Parameter NoBus bound to: 1 - type: integer  	Parameter AxiIdWidthSlvPort bound to: 32'b00000000000000000000000000000100  	Parameter AxiIdWidthMstPort bound to: 32'b00000000000000000000000000000101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'axi_id_prepend' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/axi/src/axi_id_prepend.sv:18] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000010  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lzc.sv:25] 
+// Tcl Message: 	Parameter WIDTH bound to: 32'b00000000000000000000000000000010  	Parameter MODE bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lzc.sv:25] INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized4' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DEPTH bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized4' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized4' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized4' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized4' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized4' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized5' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized5' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized5' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized5' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000010  	Parameter AxiVldRdy bound to: 1'b1  	Parameter LockIn bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized2' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/rr_arb_tree.sv:47] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized6' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized6' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spill_register_flushable__parameterized6' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized6' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized7' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'spill_register_flushable__parameterized7' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/spill_register_flushable.sv:17] 
+// Tcl Message: 	Parameter Bypass bound to: 1'b0  
+// Tcl Message: 	Parameter IdcodeValue bound to: 613749187 - type: integer  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_jtag.sv:101] INFO: [Synth 8-6157] synthesizing module 'dmi_jtag_tap' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dmi_jtag_tap.sv:19] 
+// Tcl Message: 	Parameter IrLength bound to: 32'b00000000000000000000000000000101  	Parameter IdcodeValue bound to: 613749187 - type: integer  
+// Tcl Message: 	Parameter NrHarts bound to: 32'b00000000000000000000000000000001  	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter SelectableHarts bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'dm_csrs' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_csrs.sv:18] 
+// Tcl Message: 	Parameter NrHarts bound to: 32'b00000000000000000000000000000001  	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter SelectableHarts bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_csrs.sv:294] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_csrs.sv:360] INFO: [Synth 8-6157] synthesizing module 'fifo_v2__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13] 
+// Tcl Message: 	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized5' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] 
+// Tcl Message: 	Parameter FALL_THROUGH bound to: 1'b0  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter DEPTH bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized5' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/fifo_v3.sv:13] INFO: [Synth 8-6155] done synthesizing module 'fifo_v2__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/deprecated/fifo_v2.sv:13] INFO: [Synth 8-6155] done synthesizing module 'dm_csrs' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_csrs.sv:18] INFO: [Synth 8-6157] synthesizing module 'dm_sba' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_sba.sv:18] 
+// Tcl Message: 	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter ReadByteEnable bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_sba.sv:72] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_sba.sv:101] INFO: [Synth 8-6155] done synthesizing module 'dm_sba' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_sba.sv:18] INFO: [Synth 8-6157] synthesizing module 'dm_mem' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/riscv-dbg/src/dm_mem.sv:19] 
+// Tcl Message: 	Parameter NrHarts bound to: 32'b00000000000000000000000000000001  	Parameter BusWidth bound to: 32'b00000000000000000000000000100000  	Parameter SelectableHarts bound to: 1'b1  	Parameter DmBaseAddress bound to: 32'b00000000000000000001000000000000  
+// Tcl Message: 	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000000100000  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/axi_adapter.sv:486] INFO: [Synth 8-6155] done synthesizing module 'axi_adapter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/axi_adapter.sv:19] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'ariane' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/src/ariane.sv:17] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cvxif_example_coprocessor' [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/cvxif_example_coprocessor.sv:12] 
+// Tcl Message: 	Parameter NrRgprPorts bound to: 32'b00000000000000000000000000000010  	Parameter XLEN bound to: 32'b00000000000000000000000000100000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'compressed_instr_decoder' [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/compressed_instr_decoder.sv:10] 
+// Tcl Message: 	Parameter NbInstr bound to: 32'sb00000000000000000000000000000010  	Parameter CoproInstr bound to: 130'b1110000000000000111100000000001110000000000000000000000000111101111110000000000001111000000000011100000000000000000001010101111011  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'compressed_instr_decoder' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/compressed_instr_decoder.sv:10] INFO: [Synth 8-6157] synthesizing module 'instr_decoder' [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/instr_decoder.sv:10] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'instr_decoder' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/instr_decoder.sv:10] INFO: [Synth 8-6157] synthesizing module 'copro_alu' [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/copro_alu.sv:10] 
+// Tcl Message: 	Parameter NrRgprPorts bound to: 32'b00000000000000000000000000000010  	Parameter XLEN bound to: 32'b00000000000000000000000000100000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'copro_alu' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/copro_alu.sv:10] INFO: [Synth 8-6155] done synthesizing module 'cvxif_example_coprocessor' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cvxif_example/cvxif_example_coprocessor.sv:12] INFO: [Synth 8-6157] synthesizing module 'cva6' [/home/riscv-contest/Documents/cva6-softcore-contest/core/cva6.sv:18] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cva6_hpdcache_subsystem' [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_subsystem.sv:15] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'cva6_icache' [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/cva6_icache.sv:28] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram_cache' [/home/riscv-contest/Documents/cva6-softcore-contest/common/local/util/sram_cache.sv:21] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 23 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  	Parameter BYTE_ACCESS bound to: 0 - type: integer  	Parameter TECHNO_CUT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram' [/home/riscv-contest/Documents/cva6-softcore-contest/common/local/util/sram.sv:21] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 23 - type: integer  	Parameter USER_WIDTH bound to: 1 - type: integer  	Parameter USER_EN bound to: 0 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'tc_sram_fpga_wrapper' [/home/riscv-contest/Documents/cva6-softcore-contest/common/local/util/tc_sram_fpga_wrapper.sv:10] 
+// Tcl Message: 	Parameter NumWords bound to: 256 - type: integer  	Parameter DataWidth bound to: 32'b00000000000000000000000001000000  	Parameter ByteWidth bound to: 8 - type: integer  	Parameter NumPorts bound to: 1 - type: integer  	Parameter Latency bound to: 1 - type: integer  	Parameter SimInit bound to: none - type: string  	Parameter PrintSimCfg bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'SyncSpRamBeNx64' [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/fpga-support/rtl/SyncSpRamBeNx64.sv:28] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 8 - type: integer  	Parameter DATA_DEPTH bound to: 256 - type: integer  	Parameter OUT_REGS bound to: 0 - type: integer  	Parameter SIM_INIT bound to: 1 - type: integer  
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 128 - type: integer  	Parameter USER_WIDTH bound to: 128 - type: integer  	Parameter USER_EN bound to: 0 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  	Parameter BYTE_ACCESS bound to: 0 - type: integer  	Parameter TECHNO_CUT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [/home/riscv-contest/Documents/cva6-softcore-contest/common/local/util/sram.sv:21] INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 128 - type: integer  	Parameter USER_WIDTH bound to: 128 - type: integer  	Parameter USER_EN bound to: 0 - type: integer  	Parameter NUM_WORDS bound to: 256 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/common/local/util/sram.sv:21] INFO: [Synth 8-6155] done synthesizing module 'sram_cache__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/common/local/util/sram_cache.sv:21] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/cva6_icache.sv:220] 
+// Tcl Message: 	Parameter LfsrWidth bound to: 32'b00000000000000000000000000001000  	Parameter OutWidth bound to: 32'b00000000000000000000000000000001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'lfsr' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/vendor/pulp-platform/common_cells/src/lfsr.sv:22] INFO: [Synth 8-6155] done synthesizing module 'cva6_icache' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/cva6_icache.sv:28] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'cva6_hpdcache_if_adapter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:12] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:194] INFO: [Synth 8-6155] done synthesizing module 'cva6_hpdcache_if_adapter__parameterized0' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:12] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:228] INFO: [Synth 8-6155] done synthesizing module 'hwpf_stride' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:27] INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: 	Parameter NUM_HW_PREFETCH bound to: 32'sb00000000000000000000000000000100  	Parameter N bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  	Parameter N bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  
+// Tcl Message: 	Parameter NINPUT bound to: 32'b00000000000000000000000000000010  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000100010  	Parameter ONE_HOT_SEL bound to: 1'b1  	Parameter NINPUT bound to: 32'b00000000000000000000000000000010  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000000000001  	Parameter ONE_HOT_SEL bound to: 1'b1  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: 	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:341] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:448] 
+// Tcl Message: INFO: [Synth 8-293] found qualifier priority on case statement: implementing as full_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_victim_random.sv:115] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:720] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:781] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:239] 
+// Tcl Message: 	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000100  
+// Tcl Message: 	Parameter WR_WIDTH bound to: 32'sb00000000000000000000000001000000  	Parameter RD_WIDTH bound to: 32'sb00000000000000000000000001000000  	Parameter DEPTH bound to: 32'sb00000000000000000000000000000100  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000100  	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: 	Parameter FEEDTHROUGH bound to: 1'b0  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000010  	Parameter NINPUT bound to: 32'b00000000000000000000000000000010  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001010100  	Parameter ONE_HOT_SEL bound to: 1'b1  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000011  	Parameter N bound to: 32'b00000000000000000000000000000011  
+// Tcl Message: 	Parameter N bound to: 32'b00000000000000000000000000000011  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000001  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FEEDTHROUGH bound to: 1'b1  	Parameter FIFO_DEPTH bound to: 32'b00000000000000000000000000000010  	Parameter FEEDTHROUGH bound to: 1'b1  
+// Tcl Message: 	Parameter NINPUT bound to: 32'b00000000000000000000000000000011  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001010100  	Parameter ONE_HOT_SEL bound to: 1'b1  	Parameter NINPUT bound to: 32'b00000000000000000000000000000011  	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001001001  	Parameter ONE_HOT_SEL bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv:73] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest/core/cache_subsystem/hpdcache/rtl/src/utils/hpdcache_mem_to_axi_write.sv:71] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/frontend/frontend.sv:235] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/issue_read_operands.sv:383] 
+// Tcl Message: 	Parameter NumIn bound to: 32'b00000000000000000000000000000101  	Parameter ExtPrio bound to: 1'b1  	Parameter AxiVldRdy bound to: 1'b1  	Parameter NumIn bound to: 32'b00000000000000000000000000001001  	Parameter DataWidth bound to: 32'b00000000000000000000000000100000  	Parameter ExtPrio bound to: 1'b1  	Parameter AxiVldRdy bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/alu.sv:308] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/include/ariane_pkg.sv:503] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/multiplier.sv:125] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/serdiv.sv:177] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/load_unit.sv:512] 
+// Tcl Message: 	Parameter Depth bound to: 32'b00000000000000000000000000000001  	Parameter Depth bound to: 32'b00000000000000000000000000000000  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/load_store_unit.sv:525] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/csr_regfile.sv:335] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/csr_regfile.sv:1011] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/csr_regfile.sv:1973] 
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/csr_regfile.sv:2188] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/core/csr_regfile.sv:2447] 
+// Tcl Message: 	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter NR_CORES bound to: 32'b00000000000000000000000000000001  	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/clint/axi_lite_interface.sv:78] 
+// Tcl Message: 	Parameter STAGES bound to: 32'b00000000000000000000000000000010  	Parameter AXI_ID_WIDTH bound to: 5 - type: integer  	Parameter AXI_ADDR_WIDTH bound to: 64 - type: integer  	Parameter AXI_DATA_WIDTH bound to: 64 - type: integer  	Parameter AXI_USER_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/axi_mem_if/src/axi2mem.sv:192] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/axi_mem_if/src/axi2mem.sv:234] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/axi_mem_if/src/axi2mem.sv:122] 
+// Tcl Message: 	Parameter AxiAddrWidth bound to: 64 - type: integer  	Parameter AxiDataWidth bound to: 64 - type: integer  	Parameter AxiIdWidth bound to: 5 - type: integer  	Parameter AxiUserWidth bound to: 32 - type: integer  	Parameter InclUART bound to: 1'b1  	Parameter InclSPI bound to: 1'b0  	Parameter InclEthernet bound to: 1'b0  	Parameter InclGPIO bound to: 1'b0  	Parameter ADDR_WIDTH bound to: 32'sb00000000000000000000000000100000  	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000100000  
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'UART_IF_CTS' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:403] INFO: [Synth 8-638] synthesizing module 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:41] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_input_filter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:41] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'UART_IF_DSR' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:404] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'UART_IF_DCD' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:405] 
+// Tcl Message: 	Parameter SIZE bound to: 2 - type: integer  
+// Tcl Message: 	Parameter RATIO bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_clock_div' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd:29' bound to instance 'UART_BG2' of component 'slib_clock_div' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:754] INFO: [Synth 8-638] synthesizing module 'slib_clock_div' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd:41] 
+// Tcl Message: 	Parameter RATIO bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_clock_div' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_clock_div.vhd:41] INFO: [Synth 8-3491] module 'slib_edge_detect' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_edge_detect.vhd:28' bound to instance 'UART_RCLK' of component 'slib_edge_detect' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:760] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_fifo' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:29' bound to instance 'UART_TXFF' of component 'slib_fifo' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:767] INFO: [Synth 8-638] synthesizing module 'slib_fifo' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:48] 
+// Tcl Message: 	Parameter WIDTH bound to: 8 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_fifo' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:48] 
+// Tcl Message: 	Parameter WIDTH bound to: 11 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_fifo' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:29' bound to instance 'UART_RXFF' of component 'slib_fifo' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/apb_uart.vhd:786] INFO: [Synth 8-638] synthesizing module 'slib_fifo__parameterized1' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_fifo.vhd:48] 
+// Tcl Message: 	Parameter WIDTH bound to: 11 - type: integer  	Parameter SIZE_E bound to: 6 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_counter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd:29' bound to instance 'RX_BRC' of component 'slib_counter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd:122] INFO: [Synth 8-638] synthesizing module 'slib_counter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd:46] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_counter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_counter.vhd:46] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  	Parameter THRESHOLD bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_mv_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd:29' bound to instance 'RX_MVF' of component 'slib_mv_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd:137] INFO: [Synth 8-638] synthesizing module 'slib_mv_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd:44] 
+// Tcl Message: 	Parameter WIDTH bound to: 4 - type: integer  	Parameter THRESHOLD bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'slib_mv_filter' (0#1) [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_mv_filter.vhd:44] 
+// Tcl Message: 	Parameter SIZE bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'slib_input_filter' declared at '/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:28' bound to instance 'RX_IFSB' of component 'slib_input_filter' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/uart_receiver.vhd:150] INFO: [Synth 8-638] synthesizing module 'slib_input_filter__parameterized2' [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_uart/src/slib_input_filter.vhd:41] 
+// Tcl Message: 	Parameter SIZE bound to: 4 - type: integer  
+// Tcl Message: INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_timer/timer.sv:92] INFO: [Synth 8-155] case statement is not full and has no default [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/fpga/src/apb_timer/timer.sv:116] 
+// Tcl Message: 	Parameter N_SOURCE bound to: 32'sb00000000000000000000000000011110  	Parameter N_TARGET bound to: 32'sb00000000000000000000000000000010  	Parameter MAX_PRIO bound to: 32'sb00000000000000000000000000000111  	Parameter N_SOURCE bound to: 32'sb00000000000000000000000000011110  	Parameter MAX_PRIO bound to: 32'sb00000000000000000000000000000111  	Parameter ALGORITHM bound to: SEQUENTIAL - type: string  	Parameter N_SOURCE bound to: 32'sb00000000000000000000000000011110  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/rv_plic/rtl/plic_regmap.sv:46] INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/rv_plic/rtl/plic_regmap.sv:198] 
+// Tcl Message: 	Parameter DATA_WIDTH bound to: 32'b00000000000000000000000001000000  
+// Tcl Message: INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv:39] INFO: [Synth 8-226] default block is never used [/home/riscv-contest/Documents/cva6-softcore-contest/corev_apu/src/axi_riscv_atomics/src/axi_riscv_amos_alu.sv:39] 
+// Tcl Message: Reason is one or more of the following : 	1: Only 1 word in RAM  RAM "mem_reg" dissolved into registers 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 9283.238 ; gain = 851.113 ; free physical = 43062 ; free virtual = 56214 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 9283.238 ; gain = 851.113 ; free physical = 43077 ; free virtual = 56229 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 9283.238 ; gain = 851.113 ; free physical = 43077 ; free virtual = 56229 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.71 . Memory (MB): peak = 9298.715 ; gain = 0.000 ; free physical = 43394 ; free virtual = 56545 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/xilinx/xlnx_clk_gen/xlnx_clk_gen.gen/sources_1/ip/xlnx_clk_gen/xlnx_clk_gen.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cva6_zybo_z7_20_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/cva6_zybo_z7_20_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/zybo_z7_20.xdc] Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/zybo_z7_20.xdc] Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/riscv-contest/Documents/cva6-softcore-contest-personal/corev_apu/fpga/constraints/cva6_fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cva6_zybo_z7_20_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/cva6_zybo_z7_20_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design. 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9575.207 ; gain = 0.000 ; free physical = 43330 ; free virtual = 56481 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 14 instances were transformed.   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances  
+// TclEventType: CURR_DESIGN_SET
+// [Engine Memory]: 3,762 MB (+57671kb) [00:06:52]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.1s
+// [GUI Memory]: 234 MB (+5979kb) [00:06:52]
+// [GUI Memory]: 260 MB (+15298kb) [00:06:52]
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:23 . Memory (MB): peak = 9922.512 ; gain = 1490.387 ; free physical = 43109 ; free virtual = 56263 
+// OpenDesignTask elapsed time: 131.4s
+// Tcl Message: 389 Infos, 349 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:02:45 ; elapsed = 00:02:11 . Memory (MB): peak = 9922.512 ; gain = 1880.426 ; free physical = 43109 ; free virtual = 56263 
+// Tcl Message: INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2974.843; main = 2974.843; forked = 367.234 INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 10306.727; main = 9815.469; forked = 1032.484 
+// Elapsed Time for: 'o.a': 02m:11s
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 56 seconds
+dismissDialog("Open Elaborated Design"); // bj (Open Elaborated Design Progress)
+// Elapsed Time for: 'L.f': 02m:26s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 19 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (PAResourceCommand.PACommandNames_REPORTS_WINDOW)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // Q.a (dialog2)
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (PAResourceQtoS.SchematicView_REGENERATE, Schematic_refresh)
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (PAResourceQtoS.SchematicView_REGENERATE, Schematic_refresh)
+// Elapsed time: 86 seconds
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (PAResourceQtoS.SchematicView_REGENERATE, Schematic_refresh)
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (PAResourceQtoS.SchematicView_REGENERATE, Schematic_refresh)
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (PAResourceQtoS.SchematicView_REGENERATE, Schematic_refresh)
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (PAResourceQtoS.SchematicView_REGENERATE, Schematic_refresh)
+selectButton(PAResourceQtoS.SchematicView_REGENERATE, "Schematic_refresh"); // B (PAResourceQtoS.SchematicView_REGENERATE, Schematic_refresh)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+// [GUI Memory]: 278 MB (+4545kb) [00:08:51]
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B (PAResourceCommand.PACommandNames_ZOOM_IN, Schematic_zoom_in)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)
+runTclCommand (PAResourceOtoP.PAViews_SCHEMATIC, "select_objects [get_cells i_ariane]"); // j (PAResourceOtoP.PAViews_SCHEMATIC, PlanAheadTabSchematic)

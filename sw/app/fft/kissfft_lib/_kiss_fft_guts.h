@@ -191,4 +191,3 @@ struct kiss_fft_state{
 #endif
 
 #endif /* _kiss_fft_guts_h */
-
