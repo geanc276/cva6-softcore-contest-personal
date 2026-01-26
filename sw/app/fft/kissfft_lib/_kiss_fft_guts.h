@@ -41,30 +41,19 @@ struct kiss_fft_state{
 #   define smul(a,b) ( (SAMPPROD)(a)*(b) )
 #   define sround( x )  (kiss_fft_scalar)( ( (x) + (1<<(FRACBITS-1)) ) >> FRACBITS )
 #   define S_MUL(a,b) sround( smul(a,b) )
-// #   define C_MUL(m,a,b) \
-//       do{ (m).r = sround( smul((a).r,(b).r) - smul((a).i,(b).i) ); \
-//           (m).i = sround( smul((a).r,(b).i) + smul((a).i,(b).r) ); }while(0)
+#   define C_MUL(m,a,b) \
+      do{ (m).r = sround( smul((a).r,(b).r) - smul((a).i,(b).i) ); \
+          (m).i = sround( smul((a).r,(b).i) + smul((a).i,(b).r) ); }while(0)
 
-// /////////////////////
- // VERSION 1
-
-/* ACCELERATION MATERIELLE via CV-X-IF */
-/* On caste les structures (2xint16) en int32 pour les passer dans les registres */
-/* Opcode 0x7B (custom3), funct3=0x2 (correspond à notre définition HW) */
-#define C_MUL(m, a, b) \
-    do { \
-        int32_t a_val = *(int32_t*)&(a); \
-        int32_t b_val = *(int32_t*)&(b); \
-        int32_t res; \
-        __asm__ volatile ( \
-            ".insn r 0x7B, 0x2, 0x00, %0, %1, %2" \
-            : "=r"(res) \
-            : "r"(a_val), "r"(b_val) \
-        ); \
-        *(int32_t*)&(m) = res; \
-    } while (0)
-
-/////////////////////
+static inline uint32_t bitrev_hw(uint32_t i, uint32_t nbits) {
+    uint32_t rd;
+    __asm__ volatile (
+        ".insn r 0x7B, 0x3, 0x00, %0, %1, %2"
+        : "=r"(rd)
+        : "r"(i), "r"(nbits)
+    );
+    return rd;
+}
 
 #   define DIVSCALAR(x,k) \
     (x) = sround( smul(  x, SAMP_MAX/k ) )

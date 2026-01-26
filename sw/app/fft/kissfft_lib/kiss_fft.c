@@ -68,68 +68,106 @@ static void kf_bfly4(kiss_fft_cpx * Fout, const size_t fstride, const kiss_fft_c
     } while(--k);
 }
 
-/* * Fonction principale Itérative (Non-Récursive) 
- * Remplace l'ancienne kf_work récursive
- */
+// /* * Fonction principale Itérative (Non-Récursive) 
+//  * Remplace l'ancienne kf_work récursive
+//  */
+// static void kf_work_nr(kiss_fft_cpx * Fout, const kiss_fft_cpx * f, const kiss_fft_cfg st)
+// {
+//     const int n = st->nfft;
+    
+//     // --- Etape 1 : Permutation (Mixed Radix Bit-Reversal) ---
+//     // On copie l'entrée f vers la sortie Fout dans l'ordre permuté
+//     for (int i = 0; i < n; i++) {
+//         int src = 0;
+//         int temp_i = i;
+//         int weight = 1;
+        
+//         // Lecture des facteurs depuis le tableau interne (copié depuis g_factors)
+//         // g_factors = {4, 128, 4, 32, ...} => p, m pairs
+//         const int *f_ptr = st->factors; 
+        
+//         while (*f_ptr) {
+//             int p = *f_ptr++;       // Radix (ex: 4)
+//             int m_val = *f_ptr++;   // Stride courant (ex: 128)
+            
+//             // Calcul de l'index inversé
+//             src += (temp_i / m_val) * weight;
+//             temp_i %= m_val; 
+//             weight *= p;
+//         }
+//         Fout[i] = f[src];
+//     }
+
+//     // --- Etape 2 : Calcul des Papillons (Butterflies) ---
+//     // On remonte du plus petit étage (m=1) vers le plus grand
+    
+//     int m = 1;
+//     const int *fac = st->factors;
+    
+//     // Pour N=512 avec les facteurs donnés, on a 5 étages (4,4,4,4,2)
+//     // On doit parcourir les facteurs à l'envers : du dernier (2) au premier (4)
+//     // g_factors a 10 éléments (5 paires). Le dernier 'p' est à l'index 8.
+//     const int *f_ptr = fac + 8; 
+
+//     while (f_ptr >= fac) {
+//         int p = f_ptr[0]; // Radix de l'étage courant
+        
+//         // fstride pour les twiddles
+//         size_t fstride = n / (p * m);
+        
+//         // Boucle sur tous les blocs de taille p*m
+//         for (int i = 0; i < n; i += p * m) {
+//             if (p == 4) {
+//                 kf_bfly4(Fout + i, fstride, st, m);
+//             }
+//             else if (p == 2) {
+//                 kf_bfly2(Fout + i, fstride, st, m);
+//             }
+//             // Ajouter d'autres cas si nécessaire (bfly3, bfly5)
+//         }
+        
+//         m *= p;      // Taille du prochain bloc
+//         f_ptr -= 2;  // On remonte aux facteurs précédents
+//     }
+// }
+
 static void kf_work_nr(kiss_fft_cpx * Fout, const kiss_fft_cpx * f, const kiss_fft_cfg st)
 {
     const int n = st->nfft;
-    
-    // --- Etape 1 : Permutation (Mixed Radix Bit-Reversal) ---
-    // On copie l'entrée f vers la sortie Fout dans l'ordre permuté
+
+    // --- Etape 1 : Permutation (Bit-Reversal radix-2 via HW) ---
+    int nbits = 0;
+    for (int t = n; t > 1; t >>= 1) nbits++;
+
     for (int i = 0; i < n; i++) {
-        int src = 0;
-        int temp_i = i;
-        int weight = 1;
-        
-        // Lecture des facteurs depuis le tableau interne (copié depuis g_factors)
-        // g_factors = {4, 128, 4, 32, ...} => p, m pairs
-        const int *f_ptr = st->factors; 
-        
-        while (*f_ptr) {
-            int p = *f_ptr++;       // Radix (ex: 4)
-            int m_val = *f_ptr++;   // Stride courant (ex: 128)
-            
-            // Calcul de l'index inversé
-            src += (temp_i / m_val) * weight;
-            temp_i %= m_val; 
-            weight *= p;
-        }
+        int src = (int)bitrev_hw((uint32_t)i, (uint32_t)nbits);
         Fout[i] = f[src];
     }
 
     // --- Etape 2 : Calcul des Papillons (Butterflies) ---
-    // On remonte du plus petit étage (m=1) vers le plus grand
-    
     int m = 1;
     const int *fac = st->factors;
-    
-    // Pour N=512 avec les facteurs donnés, on a 5 étages (4,4,4,4,2)
-    // On doit parcourir les facteurs à l'envers : du dernier (2) au premier (4)
-    // g_factors a 10 éléments (5 paires). Le dernier 'p' est à l'index 8.
-    const int *f_ptr = fac + 8; 
+    const int *f_ptr = fac + 8;
 
     while (f_ptr >= fac) {
-        int p = f_ptr[0]; // Radix de l'étage courant
-        
-        // fstride pour les twiddles
+        int p = f_ptr[0];
         size_t fstride = n / (p * m);
-        
-        // Boucle sur tous les blocs de taille p*m
+
         for (int i = 0; i < n; i += p * m) {
             if (p == 4) {
                 kf_bfly4(Fout + i, fstride, st, m);
-            }
-            else if (p == 2) {
+            } else if (p == 2) {
                 kf_bfly2(Fout + i, fstride, st, m);
             }
-            // Ajouter d'autres cas si nécessaire (bfly3, bfly5)
         }
-        
-        m *= p;      // Taille du prochain bloc
-        f_ptr -= 2;  // On remonte aux facteurs précédents
+
+        m *= p;
+        f_ptr -= 2;
     }
 }
+
+
+
 
 /* Allocation corrigée pour éviter la corruption mémoire */
 kiss_fft_cfg kiss_fft_alloc(int nfft, int inverse_fft, void * mem, size_t * lenmem) {

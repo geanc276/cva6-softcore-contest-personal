@@ -18,6 +18,7 @@ package cvxif_instr_pkg;
     DOUBLE_RS1 = 4'b0011,
     DOUBLE_RS2 = 4'b0100,
     ADD_MULTI = 4'b0101,
+    BITREV = 4'b1010,
     MADD_RS3_R4 = 4'b0110,
     MSUB_RS3_R4 = 4'b0111,
     NMADD_RS3_R4 = 4'b1000,
@@ -52,7 +53,7 @@ package cvxif_instr_pkg;
   } copro_compressed_resp_t;
 
   // 4 Possible RISCV instructions for Coprocessor
-  parameter int unsigned NbInstr = 10;
+  parameter int unsigned NbInstr = 11;
   parameter copro_issue_resp_t CoproInstr[NbInstr] = '{
       '{
           // Custom Nop
@@ -93,6 +94,14 @@ package cvxif_instr_pkg;
           mask: 32'b11111_11_00000_00000_1_11_00000_1111111,
           resp : '{accept : 1'b1, writeback : 1'b1, register_read : {1'b0, 1'b1, 1'b1}},
           opcode : ADD_MULTI
+      },
+      '{
+          // Bit-reversal: bitrev rd, rs1, rs2 (rs2 = nbits)
+          instr:
+          32'b00000_00_00000_00000_0_11_00000_1111011,  // custom3 opcode
+          mask: 32'b11111_11_00000_00000_1_11_00000_1111111,
+          resp : '{accept : 1'b1, writeback : 1'b1, register_read : {1'b0, 1'b1, 1'b1}},
+          opcode : BITREV
       },
       '{
           // Custom Add Multi rs1 : cus_add rd, rs1, rs1
