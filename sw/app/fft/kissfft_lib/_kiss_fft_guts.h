@@ -81,17 +81,17 @@ struct kiss_fft_state{
 /* ACCELERATION MATERIELLE via CV-X-IF */
 /* On caste les structures (2xint16) en int32 pour les passer dans les registres */
 /* Opcode 0x7B (custom3), funct3=0x2 (correspond à notre définition HW) */
-#define C_MUL(m, a, b) \
-    do { \
-        int32_t a_val = *(int32_t*)&(a); \
-        int32_t b_val = *(int32_t*)&(b); \
-        int32_t res; \
-        __asm__ volatile ( \
-            ".insn r 0x7B, 0x2, 0x00, %0, %1, %2" \
-            : "=r"(res) \
-            : "r"(a_val), "r"(b_val) \
+#define C_MUL(m, a, b)
+    do {
+        int32_t a_val = *(int32_t*)&(a);
+        int32_t b_val = *(int32_t*)&(b);
+        int32_t res;
+        __asm__ volatile (
+            ".insn r 0x7B, 0x2, 0x00, %0, %1, %2" //.insn r OPCODE, FUNCT3, FUNCT7, rd, rs1, rs2
+            : "=r"(res) //written register
+            : "r"(a_val), "r"(b_val) // values registers
         ); \
-        *(int32_t*)&(m) = res; \
+        *(int32_t*)&(m) = res;
     } while (0)
 
 /////////////////////
